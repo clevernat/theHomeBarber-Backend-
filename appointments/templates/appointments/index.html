@@ -1,502 +1,324 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Primary Meta Tags -->
-    <title>thehomebarber - Mobile Barber Service</title>
-    <meta
-      name="description"
-      content="Experience the perfect cut at home with thehomebarber – your mobile barber service delivering professional grooming directly to your doorstep. Book your appointment now!"
-    />
-    <meta
-      name="keywords"
-      content="mobile barber, haircut at home, beard styling, shave, grooming, barbershop, thehomebarber"
-    />
-    <meta name="author" content="thehomebarber" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://thehomebarber.com/" />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="thehomebarber - Mobile Barber Service" />
-    <meta
-      property="og:description"
-      content="Your style, our passion. We bring the barbershop to your doorstep with professional grooming. Book your appointment today!"
-    />
-    <meta property="og:image" content="images/bg-image.jpg" />
-    <meta property="og:url" content="https://thehomebarber.com/" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="thehomebarber - Mobile Barber Service"
-    />
-    <meta
-      name="twitter:description"
-      content="Experience the convenience of professional grooming at your home. Book your mobile barber appointment with thehomebarber today!"
-    />
-    <meta name="twitter:image" content="images/bg-image.jpg" />
-
-    <!-- Google Font: Roboto Slab -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- OpenDyslexic for dyslexic-friendly font (updated to version 0.3.0) -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/open-dyslexic@0.3.0/open-dyslexic.css"
-    />
-
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-
-    <!-- AOS CSS for scroll animations -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <!-- Skip to Content Link -->
-    <a href="#mainContent" class="skip-link">Skip to Content</a>
-
-    <!-- Header -->
-    <header>
-      <div class="container header-container">
-        <a href="index.html" class="logo" aria-label="thehomebarber Home"
-          >THB</a
-        >
-        <nav class="desktop-nav" aria-label="Main Navigation">
-          <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#appointment">Appointment</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <button
-                class="mode-toggle"
-                aria-label="Toggle dark mode"
-                aria-live="polite"
-              ></button>
-            </li>
-          </ul>
-        </nav>
-        <div class="mobile-icons">
-          <button
-            class="mode-toggle"
-            aria-label="Toggle dark mode"
-            aria-live="polite"
-          ></button>
-          <button
-            id="hamburger"
-            class="hamburger"
-            aria-label="Toggle navigation"
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              aria-hidden="true"
-            >
-              <line
-                x1="3"
-                y1="6"
-                x2="21"
-                y2="6"
-                stroke="currentColor"
-                stroke-width="2"
-              ></line>
-              <line
-                x1="3"
-                y1="12"
-                x2="21"
-                y2="12"
-                stroke="currentColor"
-                stroke-width="2"
-              ></line>
-              <line
-                x1="3"
-                y1="18"
-                x2="21"
-                y2="18"
-                stroke="currentColor"
-                stroke-width="2"
-              ></line>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <nav class="mobile-nav" aria-label="Mobile Navigation">
-        <ul class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#appointment">Appointment</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main id="mainContent">
-      <!-- Hero Section -->
-      <section id="home" class="hero" aria-labelledby="heroHeading">
-        <div class="container">
-          <div class="hero-content" data-aos="fade-up">
-            <h1 id="heroHeading">Experience the Perfect Cut at Home</h1>
-            <p>
-              Your style, our passion. We bring the barbershop to your doorstep.
-              Book your appointment today!
-            </p>
-            <button id="openModal" class="btn">Book Now</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Services Section -->
-      <section id="services" class="services" aria-labelledby="servicesHeading">
-        <div class="container">
-          <h2 id="servicesHeading" data-aos="fade-up">Our Services</h2>
-          <div class="service-items">
-            <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
-              <img src="images/classic.jpg" alt="Classic Haircut" />
-              <h3>Classic Haircut</h3>
-              <p>Timeless style with a modern twist—delivered to your home.</p>
-            </div>
-            <div class="service-item" data-aos="zoom-in" data-aos-delay="200">
-              <img src="images/trim.jpg" alt="Shave &amp; Trim" />
-              <h3>Shave &amp; Trim</h3>
-              <p>Precision grooming for a neat look wherever you are.</p>
-            </div>
-            <div class="service-item" data-aos="zoom-in" data-aos-delay="300">
-              <img src="images/beard.jpg" alt="Beard Styling" />
-              <h3>Beard Styling</h3>
-              <p>
-                Craft your perfect beard style with our experts at your
-                doorstep.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Pricing Section -->
-      <section id="pricing" class="pricing" aria-labelledby="pricingHeading">
-        <div class="container">
-          <h2 id="pricingHeading" data-aos="fade-up">Pricing</h2>
-          <div class="pricing-cards">
-            <!-- Men's Haircut Card -->
-            <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-icon" aria-hidden="true">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  fill="currentColor"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M477.9 67.9L444.1 35.1C435.3 26.3 422.7 26.3 413.9 35.1L256 192 98.1 35.1C89.3 26.3 76.7 26.3 67.9 35.1L34.1 67.9C25.3 76.7 25.3 89.3 34.1 98.1L192 256 34.1 413.9C25.3 422.7 25.3 435.3 34.1 444.1L67.9 477.9C76.7 486.7 89.3 486.7 98.1 477.9L256 320 413.9 477.9C422.7 486.7 435.3 486.7 444.1 477.9L477.9 444.1C486.7 435.3 486.7 422.7 477.9 413.9L320 256 477.9 98.1C486.7 89.3 486.7 76.7 477.9 67.9z"
-                  ></path>
-                </svg>
-              </div>
-              <h3>Men's Haircut</h3>
-              <p class="price">$25</p>
-              <p class="description">
-                A clean and classic cut to keep you looking sharp.
-              </p>
-            </div>
-            <!-- Children's Haircut Card -->
-            <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="card-icon" aria-hidden="true">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  fill="currentColor"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm0 32c-75 0-224 37.5-224 112v32c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32v-32c0-74.5-149-112-224-112z"
-                  ></path>
-                </svg>
-              </div>
-              <h3>Children's Haircut</h3>
-              <p class="price">$20</p>
-              <p class="description">
-                Playful styles for a fresh and fun look.
-              </p>
-            </div>
-            <!-- Beard Trim Card -->
-            <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
-              <div class="card-icon" aria-hidden="true">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  fill="currentColor"
-                  viewBox="0 0 640 512"
-                >
-                  <path
-                    d="M80 256c0-123.7 100.3-224 224-224 55.3 0 106 21.3 144 56 38-34.7 88.7-56 144-56 123.7 0 224 100.3 224 224 0 55.3-17.8 95.3-46.6 123.4H46.6C17.8 351.3 0 311.3 0 256zm224-96c-53 0-96 43-96 96 0 11.2 1.5 22 4.3 32h187.4c2.8-10 4.3-20.8 4.3-32 0-53-43-96-96-96z"
-                  ></path>
-                </svg>
-              </div>
-              <h3>Beard Trim</h3>
-              <p class="price">$10</p>
-              <p class="description">
-                Shape and refine your beard with expert precision.
-              </p>
-            </div>
-            <!-- Shave Card -->
-            <div class="pricing-card" data-aos="fade-up" data-aos-delay="400">
-              <div class="card-icon" aria-hidden="true">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  fill="currentColor"
-                  viewBox="0 0 640 512"
-                >
-                  <path
-                    d="M637.8 58.4l-44.7-44.7c-15.1-15.1-39.5-15.1-54.6 0L360.1 181.1c-20.1-12.6-43.3-19.1-68.1-19.1-70.7 0-128 57.3-128 128 0 24.8 6.5 48 19.1 68.1L9.4 569.8c-15.1 15.1-15.1 39.5 0 54.6l44.7 44.7c15.1 15.1 39.5 15.1 54.6 0l209.2-209.2c19.2 11.6 41.3 18.2 65.5 18.2 70.7 0 128-57.3 128-128 0-24.2-6.6-46.3-18.2-65.5l209.2-209.2c15.1-15.1 15.1-39.5 0-54.6zM255.8 425.9L117.7 287.8l106.2-106.2 138.1 138.1L255.8 425.9z"
-                  ></path>
-                </svg>
-              </div>
-              <h3>Shave</h3>
-              <p class="price">$5</p>
-              <p class="description">
-                Enjoy a smooth, precise shave for a refreshing feel.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Appointment Section -->
-      <section id="appointment" class="appointment" data-aos="fade-up">
-        <div class="container">
-          <h2>Ready for Your New Look at Home?</h2>
-          <button class="btn" id="scheduleAppointment">
-            Schedule Home Appointment
-          </button>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="contact" data-aos="fade-up">
-        <div class="container">
-          <h2>Contact Us</h2>
-          <p>
-            Have any questions? Give us a call or book your appointment today!
-          </p>
-          <p>Phone: (123) 456-7890</p>
-          <p>Email: thehomebarber542@gmail.com</p>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container footer-container">
+{% extends 'main.html' %} {% block content %} {% load static %}
+<!-- Main Content -->
+<main id="mainContent">
+  <!-- Hero Section -->
+  <section id="home" class="hero" aria-labelledby="heroHeading">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up">
+        <h1 id="heroHeading">Experience the Perfect Cut at Home</h1>
         <p>
-          &copy; <span id="footerDate"></span> | thehomebarber | All Rights
-          Reserved.
+          Your style, our passion. We bring the barbershop to your doorstep.
+          Book your appointment today!
         </p>
-        <!-- Social Media Icons -->
-        <ul class="social-icons">
-          <li>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <!-- Facebook Icon -->
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 320 512"
-                fill="currentColor"
-              >
-                <path
-                  d="M279.14 288l14.22-92.66h-88.91V117.69c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S257.43 0 225.36 0c-73.22 0-121.15 44.38-121.15 124.72v70.62H22.89V288h81.32v224h100.2V288z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <!-- Instagram Icon -->
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 448 512"
-                fill="currentColor"
-              >
-                <path
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.3 0-74.7-33.4-74.7-74.7s33.4-74.7 74.7-74.7 74.7 33.4 74.7 74.7-33.4 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9 0-14.9 12-26.9 26.9-26.9 14.9 0 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-93.5S370.8 6.1 335.1 4.4c-35.8-1.7-143.2-1.7-179 0C121.3 6.1 89.7 14.3 63.5 40.5 37.2 66.8 29 98.4 27.3 134.1c-1.7 35.8-1.7 143.2 0 179 1.7 35.7 9.9 67.3 36.2 93.5s57.8 34.5 93.5 36.2c35.8 1.7 143.2 1.7 179 0 35.7-1.7 67.3-9.9 93.5-36.2s34.5-57.8 36.2-93.5c1.7-35.8 1.7-143.2 0-179zm-48.1 224c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.9 9s-103.5 2.6-132.9-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.9s-2.6-103.5 9-132.9c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.9-9s103.5-2.6 132.9 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.9s2.7 103.5-9 132.9z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:thehomebarber542@gmail.com"
-              target="_blank"
-              aria-label="Email"
-            >
-              <!-- Email Icon -->
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 512 512"
-                fill="currentColor"
-              >
-                <path
-                  d="M502.3 190.8L327.4 338.7c-15.6 13.7-38.4 13.7-54 0L9.7 190.8C3.9 186.3 0 178.7 0 170.4V112c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48v58.4c0 8.3-3.9 15.9-9.7 20.4zM464 160l-175.4 152 175.4 152V160zM48 352l175.4-152L48 48v304zm240 88l176-152V464c0 26.5-21.5 48-48 48H136c-26.5 0-48-21.5-48-48V288l176 152c15.6 13.7 38.4 13.7 54 0z"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <button id="openModal" class="btn">Book Now</button>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Modal -->
-    <div
-      id="modal"
-      class="modal"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modalTitle"
-    >
-      <div class="modal-content" data-aos="zoom-in">
-        <span
-          id="closeModal"
-          class="close"
-          aria-label="Close modal"
-          tabindex="0"
-          >&times;</span
+  <!-- Services Section -->
+  <section id="services" class="services" aria-labelledby="servicesHeading">
+    <div class="container">
+      <h2 id="servicesHeading" data-aos="fade-up">Our Services</h2>
+      <div class="service-items">
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+          <img src="{% static 'images/classic.jpg' %}" alt="Classic Haircut" />
+          <h3>Classic Haircut</h3>
+          <p>Timeless style with a modern twist—delivered to your home.</p>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="200">
+          <img src="{% static 'images/trim.jpg' %}" alt="Shave &amp; Trim" />
+          <h3>Shave &amp; Trim</h3>
+          <p>Precision grooming for a neat look wherever you are.</p>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="300">
+          <img src="{% static 'images/beard.jpg' %}" alt="Beard Styling" />
+          <h3>Beard Styling</h3>
+          <p>
+            Craft your perfect beard style with our experts at your doorstep.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing" aria-labelledby="pricingHeading">
+    <div class="container">
+      <h2 id="pricingHeading" data-aos="fade-up">Pricing</h2>
+      <div class="pricing-cards">
+        <!-- Men's Haircut Card -->
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-icon" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M477.9 67.9L444.1 35.1C435.3 26.3 422.7 26.3 413.9 35.1L256 192 98.1 35.1C89.3 26.3 76.7 26.3 67.9 35.1L34.1 67.9C25.3 76.7 25.3 89.3 34.1 98.1L192 256 34.1 413.9C25.3 422.7 25.3 435.3 34.1 444.1L67.9 477.9C76.7 486.7 89.3 486.7 98.1 477.9L256 320 413.9 477.9C422.7 486.7 435.3 486.7 444.1 477.9L477.9 444.1C486.7 435.3 486.7 422.7 477.9 413.9L320 256 477.9 98.1C486.7 89.3 486.7 76.7 477.9 67.9z"
+              ></path>
+            </svg>
+          </div>
+          <h3>Men's Haircut</h3>
+          <p class="price">$25</p>
+          <p class="description">
+            A clean and classic cut to keep you looking sharp.
+          </p>
+        </div>
+        <!-- Children's Haircut Card -->
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-icon" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm0 32c-75 0-224 37.5-224 112v32c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32v-32c0-74.5-149-112-224-112z"
+              ></path>
+            </svg>
+          </div>
+          <h3>Children's Haircut</h3>
+          <p class="price">$20</p>
+          <p class="description">Playful styles for a fresh and fun look.</p>
+        </div>
+        <!-- Beard Trim Card -->
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-icon" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+              viewBox="0 0 640 512"
+            >
+              <path
+                d="M80 256c0-123.7 100.3-224 224-224 55.3 0 106 21.3 144 56 38-34.7 88.7-56 144-56 123.7 0 224 100.3 224 224 0 55.3-17.8 95.3-46.6 123.4H46.6C17.8 351.3 0 311.3 0 256zm224-96c-53 0-96 43-96 96 0 11.2 1.5 22 4.3 32h187.4c2.8-10 4.3-20.8 4.3-32 0-53-43-96-96-96z"
+              ></path>
+            </svg>
+          </div>
+          <h3>Beard Trim</h3>
+          <p class="price">$10</p>
+          <p class="description">
+            Shape and refine your beard with expert precision.
+          </p>
+        </div>
+        <!-- Shave Card -->
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="card-icon" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              fill="currentColor"
+              viewBox="0 0 640 512"
+            >
+              <path
+                d="M637.8 58.4l-44.7-44.7c-15.1-15.1-39.5-15.1-54.6 0L360.1 181.1c-20.1-12.6-43.3-19.1-68.1-19.1-70.7 0-128 57.3-128 128 0 24.8 6.5 48 19.1 68.1L9.4 569.8c-15.1 15.1-15.1 39.5 0 54.6l44.7 44.7c15.1 15.1 39.5 15.1 54.6 0l209.2-209.2c19.2 11.6 41.3 18.2 65.5 18.2 70.7 0 128-57.3 128-128 0-24.2-6.6-46.3-18.2-65.5l209.2-209.2c15.1-15.1 15.1-39.5 0-54.6zM255.8 425.9L117.7 287.8l106.2-106.2 138.1 138.1L255.8 425.9z"
+              ></path>
+            </svg>
+          </div>
+          <h3>Shave</h3>
+          <p class="price">$5</p>
+          <p class="description">
+            Enjoy a smooth, precise shave for a refreshing feel.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Section -->
+  <section id="appointment" class="appointment" data-aos="fade-up">
+    <div class="container">
+      <h2>Ready for Your New Look at Home?</h2>
+      <button class="btn" id="scheduleAppointment">
+        Schedule Home Appointment
+      </button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have any questions? Give us a call or book your appointment today!</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: thehomebarber542@gmail.com</p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container footer-container">
+    <p>
+      &copy; <span id="footerDate"></span> | thehomebarber | All Rights
+      Reserved.
+    </p>
+    <!-- Social Media Icons -->
+    <ul class="social-icons">
+      <li>
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          aria-label="Facebook"
         >
-        <h2 id="modalTitle">Book Your Home Service Appointment</h2>
-        <form id="bookingForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-              required
-              aria-required="true"
+          <!-- Facebook Icon -->
+          <svg width="24" height="24" viewBox="0 0 320 512" fill="currentColor">
+            <path
+              d="M279.14 288l14.22-92.66h-88.91V117.69c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S257.43 0 225.36 0c-73.22 0-121.15 44.38-121.15 124.72v70.62H22.89V288h81.32v224h100.2V288z"
             />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              aria-required="true"
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <!-- Instagram Icon -->
+          <svg width="24" height="24" viewBox="0 0 448 512" fill="currentColor">
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.3 0-74.7-33.4-74.7-74.7s33.4-74.7 74.7-74.7 74.7 33.4 74.7 74.7-33.4 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9 0-14.9 12-26.9 26.9-26.9 14.9 0 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-93.5S370.8 6.1 335.1 4.4c-35.8-1.7-143.2-1.7-179 0C121.3 6.1 89.7 14.3 63.5 40.5 37.2 66.8 29 98.4 27.3 134.1c-1.7 35.8-1.7 143.2 0 179 1.7 35.7 9.9 67.3 36.2 93.5s57.8 34.5 93.5 36.2c35.8 1.7 143.2 1.7 179 0 35.7-1.7 67.3-9.9 93.5-36.2s34.5-57.8 36.2-93.5c1.7-35.8 1.7-143.2 0-179zm-48.1 224c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.9 9s-103.5 2.6-132.9-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.9s-2.6-103.5 9-132.9c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.9-9s103.5-2.6 132.9 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.9s2.7 103.5-9 132.9z"
             />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Your Phone Number"
-              required
-              aria-required="true"
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          href="mailto:thehomebarber542@gmail.com"
+          target="_blank"
+          aria-label="Email"
+        >
+          <!-- Email Icon -->
+          <svg width="24" height="24" viewBox="0 0 512 512" fill="currentColor">
+            <path
+              d="M502.3 190.8L327.4 338.7c-15.6 13.7-38.4 13.7-54 0L9.7 190.8C3.9 186.3 0 178.7 0 170.4V112c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48v58.4c0 8.3-3.9 15.9-9.7 20.4zM464 160l-175.4 152 175.4 152V160zM48 352l175.4-152L48 48v304zm240 88l176-152V464c0 26.5-21.5 48-48 48H136c-26.5 0-48-21.5-48-48V288l176 152c15.6 13.7 38.4 13.7 54 0z"
             />
-          </div>
-          <div class="form-group">
-            <label for="date">Date</label>
-            <input
-              type="date"
-              id="date"
-              name="date"
-              required
-              aria-required="true"
-            />
-            <small>Selected date: <span id="formattedDate"></span></small>
-          </div>
-          <div class="form-group">
-            <label for="time">Time</label>
-            <input
-              type="time"
-              id="time"
-              name="time"
-              required
-              aria-required="true"
-            />
-          </div>
-          <div class="form-group">
-            <label for="service">Service</label>
-            <select id="service" name="service" required aria-required="true">
-              <option value="">Select a Service</option>
-              <option value="haircut">Classic Haircut</option>
-              <option value="shave">Shave &amp; Trim</option>
-              <option value="beard">Beard Styling</option>
-            </select>
-          </div>
-          <button type="submit" class="btn">Submit Appointment</button>
-        </form>
-      </div>
-    </div>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
 
-    <!-- Accessibility Widget -->
-    <button
-      id="accessibilityToggle"
-      class="accessibility-btn"
-      aria-label="Accessibility Options"
+<!-- Modal -->
+<div
+  id="modal"
+  class="modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle"
+>
+  <div class="modal-content" data-aos="zoom-in">
+    <span id="closeModal" class="close" aria-label="Close modal" tabindex="0"
+      >&times;</span
     >
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="#fff"
-        aria-hidden="true"
-      >
-        <path
-          d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 14.93V17a1 1 0 002 0v-.07a7.001 7.001 0 01-2 0zM12 4a8 8 0 018 8 8.003 8.003 0 01-2.243 5.657l-.707-.707A6 6 0 1012 6a5.978 5.978 0 00-2.05.347l-.708-.707A8.003 8.003 0 0112 4z"
+    <h2 id="modalTitle">Book Your Home Service Appointment</h2>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+          aria-required="true"
         />
-      </svg>
-    </button>
-    <div
-      id="accessibilityPanel"
-      class="accessibility-panel"
-      aria-label="Accessibility Options Panel"
-    >
-      <button id="increaseFont">Increase Font</button>
-      <button id="decreaseFont">Decrease Font</button>
-      <button id="resetFont">Reset Font</button>
-      <button id="toggleContrast">Toggle High Contrast</button>
-      <button id="toggleDyslexic">Toggle Dyslexic Font</button>
-      <button id="toggleSpacing">Toggle Extra Spacing</button>
-    </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          aria-required="true"
+        />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Your Phone Number"
+          required
+          aria-required="true"
+        />
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          required
+          aria-required="true"
+        />
+        <small>Selected date: <span id="formattedDate"></span></small>
+      </div>
+      <div class="form-group">
+        <label for="time">Time</label>
+        <input
+          type="time"
+          id="time"
+          name="time"
+          required
+          aria-required="true"
+        />
+      </div>
+      <div class="form-group">
+        <label for="service">Service</label>
+        <select id="service" name="service" required aria-required="true">
+          <option value="">Select a Service</option>
+          <option value="haircut">Classic Haircut</option>
+          <option value="shave">Shave &amp; Trim</option>
+          <option value="beard">Beard Styling</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Submit Appointment</button>
+    </form>
+  </div>
+</div>
 
-    <!-- AOS JS for scroll animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <!-- Main JavaScript -->
-    <script src="js/script.js"></script>
-  </body>
-</html>
+<!-- Accessibility Widget -->
+<button
+  id="accessibilityToggle"
+  class="accessibility-btn"
+  aria-label="Accessibility Options"
+>
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="#fff"
+    aria-hidden="true"
+  >
+    <path
+      d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 14.93V17a1 1 0 002 0v-.07a7.001 7.001 0 01-2 0zM12 4a8 8 0 018 8 8.003 8.003 0 01-2.243 5.657l-.707-.707A6 6 0 1012 6a5.978 5.978 0 00-2.05.347l-.708-.707A8.003 8.003 0 0112 4z"
+    />
+  </svg>
+</button>
+<div
+  id="accessibilityPanel"
+  class="accessibility-panel"
+  aria-label="Accessibility Options Panel"
+>
+  <button id="increaseFont">Increase Font</button>
+  <button id="decreaseFont">Decrease Font</button>
+  <button id="resetFont">Reset Font</button>
+  <button id="toggleContrast">Toggle High Contrast</button>
+  <button id="toggleDyslexic">Toggle Dyslexic Font</button>
+  <button id="toggleSpacing">Toggle Extra Spacing</button>
+</div>
+
+{% endblock content %}

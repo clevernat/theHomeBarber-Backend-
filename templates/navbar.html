@@ -1,0 +1,73 @@
+{% load static %}
+<!-- Header -->
+<header>
+  <div class="container header-container">
+    <a href="index.html" class="logo" aria-label="thehomebarber Home">THB</a>
+    <nav class="desktop-nav" aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#appointment">Appointment</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button
+            class="mode-toggle"
+            aria-label="Toggle dark mode"
+            aria-live="polite"
+          ></button>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-icons">
+      <button
+        class="mode-toggle"
+        aria-label="Toggle dark mode"
+        aria-live="polite"
+      ></button>
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+          <line
+            x1="3"
+            y1="6"
+            x2="21"
+            y2="6"
+            stroke="currentColor"
+            stroke-width="2"
+          ></line>
+          <line
+            x1="3"
+            y1="12"
+            x2="21"
+            y2="12"
+            stroke="currentColor"
+            stroke-width="2"
+          ></line>
+          <line
+            x1="3"
+            y1="18"
+            x2="21"
+            y2="18"
+            stroke="currentColor"
+            stroke-width="2"
+          ></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile Navigation">
+    <ul class="nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#appointment">Appointment</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
